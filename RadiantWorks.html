@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Radiant Works</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2.2.2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="sun.jpg" alt="Sun Logo" class="sun-logo">
+                <h1>RADIANT WORKS</h1>
+            </div>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skill">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <img src="dark mode.png" id="mode" onclick="DarkMode()">
+            </ul>
+        </header>
+        <main id="about" class="current-page">
+            <h2>Hello, <br>I'm <span class="text">Sunshine Parone Sablaon.</span></h2>
+            <p>I am a 24-year-old college student born on May 08, 2000. I am currently pursuing a Bachelor of Technical Teacher Education Major in Computer Programming 
+                at Technological University of the Philippines - Cavite Campus. I invite you to explore my projects and get a glimpse of my academic and personal journey. Thank you for visiting, 
+                and feel free to reach out if you'd like to connect or collaborate!</p>
+            <img src="shine.jpg" alt="Profile Picture" class="display-pic">
+            <div class="contact">
+                <a href="https://www.facebook.com/sishaynokayg?mibextid=ZbWKwL"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/shaynsbln_?igsh=OTk0YzhjMDVlZA%3D%3D&fbclid=IwZXh0bgNhZW0CMTAAAR2SaGWX7OudNmMrKehZPely-sCNq5xY4KcWrRQsaKGQHCTNHsYt4n7VVgA_aem_AU3CAWw9MmaaZ16EdRbO-UxcTJd2pPMHGoZgn9XPmcjnPKtkuEQdjqr5lOviZNcsouCaZLXjpZH_G3KOl-N1ftnw"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+        </main>
+        <div class="main1">
+            <h3 class="head">Educational Attainment</h3>
+            <div class="container">
+                <ul>
+                    <li>
+                        <h3 class="heading">Elementary</h3>
+                        <p>2006 - 2012 <BR>Calubayan Elementary School<BR>Calubayan, Socorro, Oriental Mindoro</p>
+                    </li>
+                    <li>
+                        <h3 class="heading">High School</h3>
+                        <p>2012 - 2016<BR>Kaypian National High School<BR>Carissa Homes 4A, Kaypian Proper, San Jose Del Monte, Bulacan</p>
+                    </li>
+                    <li>
+
+                        <h3 class="heading">Senior High School</h3>
+                        <p>2016 - 2018<BR>Accountancy, Business and Management (ABM)<BR>La Concepcion College<BR>Kaypian Rd. Cor. Quirino Highway, San Jose Del Monte, Bulacan</p>
+                    </li>
+                    <li>
+                        <h3 class="heading">College</h3>
+                        <p>2022 - Present<BR>Bachelor of Technical Teacher Education Major in Computer Programming<BR>Technological University of the Philippines - Cavite Campus<BR>Carlos Q. Trinidad Avenue, Salawag, Dasmariñas City, Cavite</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <section class="fav">
+            <h1 class="section-title">Favorites Movie</h1>
+            <div class="container">
+                <div class="image">
+                    <img src="spirited-away.png" alt="Spirited Away">
+                </div>
+                <div class="description">
+                    <p>"Spirited Away" is a captivating Japanese animated fantasy film directed by Hayao Miyazaki and produced by Studio Ghibli. The story follows Chihiro, a young girl who becomes trapped in a mysterious and enchanting world after her parents are transformed into pigs by eating food meant for the spirits. In order to rescue her parents and find a way back to the human world, Chihiro must navigate through a bustling bathhouse run by the powerful witch Yubaba. Along the way, she encounters a host of eccentric characters and faces numerous challenges that test her courage, determination, and compassion. Filled with stunning animation, imaginative storytelling, and rich symbolism, "Spirited Away" is a timeless classic beloved by audiences around the world.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="main1">
+            <h3 class="head" id="skill">SKILLS</h3>
+            <div class="container1">
+                <ul>
+                    <li>
+                        <h3 class="heading">PYTHON</h3>
+                        <p>Writing clean and efficient code<BR>Developing web applications using Django<BR>Creating and handling databases with SQL and SQLite</p>
+                    </li>
+                    <li>
+                        <h3 class="heading">HTML</h3>
+                        <p>Building forms for user input<BR>Creating well-structured and semantic HTML documents<BR>Embedding multimedia content such as images, videos, and audio</p>
+                    </li>
+                    <li>
+                        <h3 class="heading">CASCADING STYLE SHEET</h3>
+                        <p>Writing clean and maintainable CSS<BR>Creating responsive designs using media queries<BR>Animating elements with CSS animations and transitions</p>
+                    </li>
+                    <li>
+                        <h3 class="heading">JAVASCRIPT</h3>
+                        <p>Handling events and user interactions<BR>Writing clean and efficient JavaScript code<BR>Manipulating the DOM (Document Object Model)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="main1">
+            <h3 class="head1" id="projects">ARTS</h3>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <img src="ART 1.png" alt="Image 1">
+                    <div class="overlay-text">Paper Mosaic</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="ART 2.png" alt="Image 2">
+                    <div class="overlay-text">Digital Poster</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="ART 3.png" alt="Image 3">
+                    <div class="overlay-text">Favorite Movie Scene</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="ART 4.png" alt="Image 4">
+                    <div class="overlay-text">Artist</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="ART 5.png" alt="Image 5">
+                    <div class="overlay-text">Free Hand Paint</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="main1">
+            <h3 class="head1">PROGRAMMING</h3>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <img src="PROG 1.png" alt="Image 1">
+                    <div class="overlay-text">PROG 1 - Travel With Me</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="PROG 2.png" alt="Image 2">
+                    <div class="overlay-text">PROG 3 - Macro Gameplay</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="PROG 3.png" alt="Image 3">
+                    <div class="overlay-text">PROG 2 Lectures Webpages</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="PROG 4.png" alt="Image 4">
+                    <div class="overlay-text">PROG 4 - Website Portfolio</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="PROG 5.png" alt="Image 5">
+                    <div class="overlay-text">PROG 2 - Combined Webpages</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="main1">
+            <h3 class="head1">OTHERS</h3>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <img src="OTHER 1.png" alt="Image 1">
+                    <div class="overlay-text">PROFED 4 - Micro Teaching</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="OTHER 2.png" alt="Image 2">
+                    <div class="overlay-text">Metal Works - Gear Clock</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="OTHER 3.png" alt="Image 3">
+                    <div class="overlay-text">ICT - Animations</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="OTHER 4.png" alt="Image 4">
+                    <div class="overlay-text">AFA - Hydroponics</div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="OTHER 5.png" alt="Image 5">
+                    <div class="overlay-text">HE - Jewelry</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p class="footer"><i>Explore my portfolio to see how I infuse each project with a touch of warmth and a burst of energy. 
+                <br><br>© 2024 Radiant Works. All rights reserved. </i><br><br></p>
+        </footer>
+    </body>
+    <script>
+    function DarkMode() {
+        var mode = document.getElementById('mode');
+        document.body.classList.toggle("dark-mode");
+    
+        var bgElements = document.getElementsByClassName('bg');
+        
+        if (document.body.classList.contains("dark-mode")) {
+            mode.src = "light mode.png";
+            for (var i = 0; i < bgElements.length; i++) {
+                bgElements[i].style.opacity = 0;
+            }
+        } else {
+            mode.src = "dark mode.png";
+            for (var i = 0; i < bgElements.length; i++) {
+                bgElements[i].style.opacity = 1;
+            }
+        }
+    }
+    
+    </script>
+</html>
